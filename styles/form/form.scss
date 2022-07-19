@@ -1,0 +1,67 @@
+#form{
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    gap: 2rem;
+    margin-bottom: 5rem;
+    max-width: 100%;
+
+    @media (max-width: 688px){
+        grid-template-columns: 1fr;
+    }
+
+    .name-surname {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+
+        .name, .cognome{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+    .email, .text-area{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        $borderColor : #D1D5DB;
+
+        label{
+            margin-bottom: 1rem;
+        }
+
+        input{
+            border: none;
+            padding: 1rem;
+            border-bottom: 1px solid $borderColor;
+            outline: none;
+        }
+
+        textarea{
+            border-radius: 5px;
+            border: 1px solid $borderColor;
+            padding: 1rem;
+            resize: none;
+            outline: none;
+        }
+
+        button[type=submit]{
+            max-width: 6rem;
+            padding: .8rem 0;
+            border: none;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+
+    }
+
+
+}

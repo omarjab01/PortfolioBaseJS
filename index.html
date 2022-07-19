@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/navbar/navbar.css">
     <link rel="stylesheet" href="styles/heroText/hero.css">
     <link rel="stylesheet" href="styles/projectCard/projectCard.css">
+    <link rel="stylesheet" href="styles/form/form.css">
 
 
 
@@ -28,6 +29,11 @@
                 <li>Blog</li>
                 <li>About</li>
             </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
 
         <div id="hero-section">
@@ -65,6 +71,36 @@
                 </div>
             </div>
 
+        </div>
+
+
+        <div id="form">
+            <div id="form-left">
+                <h2>Get In Touch</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos minima ea vero eos amet rerum, voluptatibus modi deserunt consequuntur temporibus officia fuga?</p>
+                <p>Want to contact me with email? <a href="mailto:omarjab01@gmail.com">Omarjab01@gmail.com</a></p>
+            </div>   
+            <form action="" id="form-right">
+                <div class="name-surname">
+                    <div class="name">
+                        <label for = "nome">First Name</label>
+                        <input type="text" placeholder="Enter your first name" name="nome">
+                    </div>
+                    <div class="cognome">
+                        <label for = "cognome">Last Name</label>
+                        <input type="text" placeholder="Enter your last name" name="cognome">
+                    </div>
+                </div>
+                <div class="email">
+                    <label for = "email">Email</label>
+                    <input type="text" placeholder="Enter your email" name="email" required>
+                </div>
+                <div class="text-area">
+                    <label for = "messaggio">Message</label>
+                    <textarea name="messaggio" id="" cols="30" rows="10" placeholder="Enter your message" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>     
         </div>
 
     </div>

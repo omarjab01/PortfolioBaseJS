@@ -1,0 +1,92 @@
+#form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 4fr;
+      grid-template-columns: 2fr 4fr;
+  gap: 2rem;
+  margin-bottom: 5rem;
+  max-width: 100%;
+}
+
+@media (max-width: 688px) {
+  #form {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+#form .name-surname {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 2rem;
+}
+
+#form .name-surname .name, #form .name-surname .cognome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+#form .email, #form .text-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+#form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+#form form label {
+  margin-bottom: 1rem;
+}
+
+#form form input {
+  border: none;
+  padding: 1rem;
+  border-bottom: 1px solid #D1D5DB;
+  outline: none;
+}
+
+#form form textarea {
+  border-radius: 5px;
+  border: 1px solid #D1D5DB;
+  padding: 1rem;
+  resize: none;
+  outline: none;
+}
+
+#form form button[type=submit] {
+  max-width: 6rem;
+  padding: .8rem 0;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+/*# sourceMappingURL=form.css.map */
