@@ -1,0 +1,29 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    #logo{
+        a{
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.25rem;
+        }
+    }
+
+    ul{
+        list-style: none;
+        gap: 2rem;
+
+        li{
+            display: inline;
+            margin-left: 2rem;
+        }
+    }
+
+    ul:first-child{
+        margin-left: 0;
+    }
+
+}

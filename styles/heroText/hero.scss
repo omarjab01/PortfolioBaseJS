@@ -1,0 +1,19 @@
+
+$gray-text : #868686;
+
+#hero-section{
+
+    margin-top: 8rem;
+
+    h1, p{
+        font-size: 36px;
+        margin: 0;
+    }
+
+    p{
+        font-size: 32px;
+        color: $gray-text;
+        max-width: 85%;
+    }
+
+}

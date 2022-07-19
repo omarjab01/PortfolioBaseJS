@@ -1,0 +1,15 @@
+#hero-section {
+  margin-top: 8rem;
+}
+
+#hero-section h1, #hero-section p {
+  font-size: 36px;
+  margin: 0;
+}
+
+#hero-section p {
+  font-size: 32px;
+  color: #868686;
+  max-width: 85%;
+}
+/*# sourceMappingURL=hero.css.map */
