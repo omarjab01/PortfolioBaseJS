@@ -4,6 +4,10 @@
     font-family: 'inter', sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .container{
     max-width: 1160px;
     margin: auto;
@@ -12,3 +16,13 @@
 #projects{
     margin-top: 5rem;
 }
+
+@media (max-width: 624px){
+    .container{
+        padding: 1rem;
+    }
+}
+
+// #form{
+//     max-width: 100%;
+// }

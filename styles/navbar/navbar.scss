@@ -12,7 +12,7 @@ nav{
         }
     }
 
-    ul{
+    .lista-nav{
         list-style: none;
         gap: 2rem;
 
@@ -26,4 +26,64 @@ nav{
         margin-left: 0;
     }
 
+
+    #hamburger{
+        width: 1rem;
+        height: 1rem;
+        display: none;
+        cursor: pointer;
+        div{
+            width: 24px;
+            height: 3px;
+            background-color: black;
+            margin: 3px 0;
+            transition: all 0.3s ease;
+        }
+        
+    }
+
+    
+
+    .nav-active{
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 624px){
+    .lista-nav{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 3rem;
+        background-color: white;
+        left: 0;
+        align-items: center;
+        padding-left: 0;
+        padding-top: 5rem;
+        transform: translateY(-110%);
+        transition:all .5s ease-in;
+    }
+    nav{
+        #hamburger{
+            display: block;
+        }
+    }
+}
+
+
+
+
+.toggleMenu {
+    .linea1{
+        transform: rotate(-45deg) translate(0, 8px);
+    }
+    .linea3{
+        transform: rotate(45deg) translate(0, -8px);
+    }
+    .linea2{
+        opacity: 0;
+    }
 }
